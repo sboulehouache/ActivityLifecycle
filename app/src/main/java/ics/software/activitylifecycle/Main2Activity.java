@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class Main2Activity extends AppCompatActivity {
     private final String TAG = "Sortie";
-    Intent startSecondActivity = null;
-    Button startActivity2 = null;
+    Intent startThirdActivity = null;
+    Button startActivity3 = null;
     int duree = 10;
     int iteration = 100;
 
@@ -18,12 +18,12 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        startSecondActivity = new Intent(this.getApplicationContext(), Main3Activity.class);
-        startActivity2 = (Button) findViewById(R.id.startActivity3);
-        startActivity2.setOnClickListener(new View.OnClickListener() {
+        startThirdActivity = new Intent(this.getApplicationContext(), Main3Activity.class);
+        startActivity3 = (Button) findViewById(R.id.startActivity3);
+        startActivity3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(startSecondActivity);
+                startActivity(startThirdActivity);
             }
         });
         Log.i(TAG, "_________________________________________________________");
@@ -105,7 +105,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(TAG, "Entered the onDestroy() method");
+        Log.i(TAG, "Entered the onDestroy() method Activity 2");
         for (int i = 0; i < iteration; i++) {
             try {
                 Thread.sleep(duree);
