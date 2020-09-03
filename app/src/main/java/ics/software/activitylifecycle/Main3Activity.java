@@ -26,6 +26,7 @@ public class Main3Activity extends AppCompatActivity {
                 startActivity(startSecondActivity);
             }
         });
+        Log.i(TAG, "_________________________________________________________");
         Log.i(TAG, "Entered the onCreate() method Activity 3");
         for (int i = 0; i < iteration; i++) {
             try {

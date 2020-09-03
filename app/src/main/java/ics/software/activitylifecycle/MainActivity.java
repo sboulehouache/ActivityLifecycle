@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(startSecondActivity);
             }
         });
-        Log.i(TAG, "Entered the onCreate() method");
+        Log.i(TAG, "_________________________________________________________");
+        Log.i(TAG, "Entered the onCreate() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart(){
         super.onStart();
-        Log.i(TAG, "Entered the onStart() method");
+        Log.i(TAG, "Entered the onStart() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected  void onResume(){
         super.onResume();
-        Log.i(TAG, "Entered the onResume() method");
+        Log.i(TAG, "Entered the onResume() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause(){
         super.onPause();
-        Log.i(TAG, "Entered the onPause() method");
+        Log.i(TAG, "Entered the onPause() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop(){
         super.onStop();
-        Log.i(TAG, "Entered the onStop() method");
+        Log.i(TAG, "Entered the onStop() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart(){
         super.onRestart();
-        Log.i(TAG, "Entered the onRestart() method");
+        Log.i(TAG, "Entered the onRestart() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
@@ -106,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        Log.i(TAG, "Entered the onDestroy() method");
+        Log.i(TAG, "Entered the onDestroy() method Activity 1");
         for(int i=0;i<iteration;i++){
             try {
                 Thread.sleep(duree);
